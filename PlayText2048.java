@@ -38,7 +38,7 @@ public class PlayText2048 {
     }
 
     Scanner stdin = new Scanner(System.in);
-    while(!game.isGameOver()){
+    while(game.isGameOver()!){
       System.out.printf("Score: %d\n",game.getScore());
       System.out.println("main "+game.boardString());
       System.out.printf("Move: ");
