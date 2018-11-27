@@ -6,6 +6,7 @@ public class PlayText2048 {
   // Play a game of 2048 of the given size
   // usage: java PlayText2048 rows cols [random-seed]
   public static void main(String args[]){
+    System.out.println("Simple sample for 2048");
     if(args.length < 2){
       System.out.println("usage: java PlayText2048 rows cols [random-seed]");
       return;
@@ -69,3 +70,4 @@ public class PlayText2048 {
     System.out.printf("Game Over! Final Score: %d\n",game.getScore());
   }
 }
+// comments
