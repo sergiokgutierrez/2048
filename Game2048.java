@@ -6,6 +6,7 @@ import java.util.Random;
 public class Game2048{
   // Random number generator used in the provided methods
   // getRandomTile() and randomFreeLocation()
+  //Global Variables??? 
   private Random random;
   DenseBoard board;
   boolean isGameOver;
@@ -19,7 +20,7 @@ public class Game2048{
   }
   // ADD ADDITOINAL FIELDS HERE
   
-  
+
   public void addRandomTile(){
 	  Tile newTile= getRandomTile();
 	  int newLocation= randomFreeLocation();
@@ -71,6 +72,7 @@ public class Game2048{
 	  return board.toString();
   }
   public void shiftLeft(){
+    //bring everythingto the top create a new row
 	  
   }
  public void shiftRight(){
