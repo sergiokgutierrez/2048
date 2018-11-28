@@ -6,7 +6,6 @@ public class PlayText2048 {
   // Play a game of 2048 of the given size
   // usage: java PlayText2048 rows cols [random-seed]
   public static void main(String args[]){
-    System.out.println("Simple sample for 2048");
     if(args.length < 2){
       System.out.println("usage: java PlayText2048 rows cols [random-seed]");
       return;
@@ -18,14 +17,21 @@ public class PlayText2048 {
     int seed = 13;           // Default random number
     if(args.length >= 3){
       seed = Integer.parseInt(args[2]);
+      System.out.println("we are using the seed "+seed);
     }
 
+
+
+    
+    
+    
     System.out.println("Instructions");
     System.out.println("------------");
     System.out.println("Enter moves as l r u d q for");
     System.out.println("l: shift left");
     System.out.println("r: shift right");
     System.out.println("u: shift up");
+
     System.out.println("l: shift down");
     System.out.println("q: quit game");
     System.out.println();
@@ -38,13 +44,14 @@ public class PlayText2048 {
     }
 
     Scanner stdin = new Scanner(System.in);
-    while(game.isGameOver()!){
+    while(!game.isGameOver()){
       System.out.printf("Score: %d\n",game.getScore());
       System.out.println("main "+game.boardString());
       System.out.printf("Move: ");
       String input = stdin.next();
 
       if(input.equals("q")){ 
+
         break; 
       }
       else if(input.equals("l")){
