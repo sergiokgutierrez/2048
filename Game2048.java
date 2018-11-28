@@ -12,7 +12,7 @@ public class Game2048{
   boolean isGameOver;
 
   
-  
+  //simple constructor
   public Game2048(int x, int y, int z){//rows, columns, seed
 	  board= new DenseBoard(x, y);
 	  random= new Random();
@@ -73,7 +73,7 @@ public class Game2048{
   }
   public void shiftLeft(){
     //bring everythingto the top create a new row
-	  
+	  board.shiftLeft();
   }
  public void shiftRight(){
 	  
