@@ -39,14 +39,13 @@ public class PlayText2048 {
     Game2048 game = new Game2048(rows,cols,seed);
     // New games start with board 25% full
     int nInitialTiles = (int) (0.25 * rows * cols);
-    System.out.println("crash 1");
     for(int i=0; i<=nInitialTiles; i++){
       game.addRandomTile();
     }
-    System.out.println("crash 2");
 
     Scanner stdin = new Scanner(System.in);
     while(!game.isGameOver()){
+      System.out.println("make it here");
       System.out.printf("Score: %d\n",game.getScore());
       System.out.println("main "+game.boardString());
       System.out.printf("Move: ");
