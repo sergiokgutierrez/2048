@@ -162,7 +162,6 @@ public class DenseBoard extends Board {
 	  for(int n=0; n<r;n++){
 		  for (int m=0; m<c;m++){
 			  row = row + board[n][m].toString();
-			  System.out.println(" row "+n+" column "+ m);
 		  }
 		  sBoard = sBoard +"/n"+row;
 		  row = "";
