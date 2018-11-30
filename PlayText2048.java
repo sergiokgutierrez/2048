@@ -1,4 +1,3 @@
-// SIMPLE SAMPLE SEND TO THE TOP
 import java.util.Scanner;
 
 // Class to play a single game of 2048
