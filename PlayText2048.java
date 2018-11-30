@@ -1,3 +1,4 @@
+// SIMPLE SAMPLE SEND TO THE TOP
 import java.util.Scanner;
 
 // Class to play a single game of 2048
@@ -45,7 +46,6 @@ public class PlayText2048 {
 
     Scanner stdin = new Scanner(System.in);
     while(!game.isGameOver()){
-      System.out.println("make it here");
       System.out.printf("Score: %d\n",game.getScore());
       System.out.println("main "+game.boardString());
       System.out.printf("Move: ");
