@@ -11,6 +11,8 @@ public class DenseBoard extends Board {
 
   // Build a Board of the specified size that is empty of any tiles
   public DenseBoard(int rows, int cols){
+    System.out.println("rows: "+rows+"!!!");
+    System.out.println("cols: "+cols+"!!!");
 	  board = new Tile[rows][cols];
 	  freeSpaceCount = rows *cols;
 	  tileCount = 0;
@@ -160,6 +162,7 @@ public class DenseBoard extends Board {
 	  String row = null; 
 	  String sBoard= null;
 	  for(int n=0; n<r;n++){
+      System.out.println(sBoard);
 		  for (int m=0; m<c;m++){
 			  row = row + board[n][m].toString();
 			  System.out.println(" row "+n+" column "+ m);
@@ -167,7 +170,7 @@ public class DenseBoard extends Board {
 		  sBoard = sBoard +"/n"+row;
 		  row = "";
 	  }
-	  return sBoard;			  
+    return sBoard;		
   }
   // Shift the tiles of Board in various directions.  Any tiles that
   // collide and should be merged should be changed internally in the
