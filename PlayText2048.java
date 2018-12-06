@@ -37,13 +37,12 @@ public class PlayText2048 {
     int nInitialTiles = (int) (0.25 * rows * cols);
     for(int i=0; i<=nInitialTiles; i++){
       game.addRandomTile();
-      System.out.println("1: "+ i);
+      System.out.println("WE ARE HEREEEEEEE I: "+ i);
     }
 
     Scanner stdin = new Scanner(System.in);
     while(!game.isGameOver()){
       System.out.printf("Score: %d\n",game.getScore());
-      System.out.println("make it here");
       System.out.println("main "+game.boardString());//game crashese here
       System.out.printf("Move: ");
       String input = stdin.next();

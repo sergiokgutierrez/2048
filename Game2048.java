@@ -44,8 +44,8 @@ public class Game2048{
   //     5% 8-tile
   // Use the internal random number generator for the game.
   public Tile getRandomTile(){
+    System.out.println("calling the random");
 	int rand= random.nextInt(100);
-    //    System.out.printf("\n\nMY DOUBLE IS %f\n",rand);
     if(rand <= 70){
       return new TwoNTile(2);
     }
