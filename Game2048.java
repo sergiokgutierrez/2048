@@ -18,7 +18,7 @@ public class Game2048{
 	  random= new Random();
 	  random.setSeed(z);
   }
-  // ADD ADDITOINAL FIELDS HERE
+  // ADD ADDITIONAL FIELDS HERE
   
 
   public void addRandomTile(){
@@ -56,10 +56,7 @@ public class Game2048{
       return  new TwoNTile(8);
     }
   }
-  ///adsfklk;jnadsf;lkasdfnk;jnagskf
-  ///asdfjn/adjlffja;sdnf
 
-  dejate de joder pelo tudo
 
   // If the game board has F>0 free spaces, return a random integer
   // between 0 and F-1.  If there are no free spaces, throw an
@@ -76,7 +73,6 @@ public class Game2048{
 	  return board.toString();
   }
   public void shiftLeft(){
-    //bring everythingto the top create a new row
 	  board.shiftLeft();
   }
  public void shiftRight(){
