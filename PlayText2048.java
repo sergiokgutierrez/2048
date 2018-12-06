@@ -20,11 +20,6 @@ public class PlayText2048 {
       seed = Integer.parseInt(args[2]);
       System.out.println("we are using the seed "+seed);
     }
-
-
-
-    
-    
     
     System.out.println("Instructions");
     System.out.println("------------");
@@ -42,6 +37,7 @@ public class PlayText2048 {
     int nInitialTiles = (int) (0.25 * rows * cols);
     for(int i=0; i<=nInitialTiles; i++){
       game.addRandomTile();
+      System.out.println("1: "+ i);
     }
 
     Scanner stdin = new Scanner(System.in);
