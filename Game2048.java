@@ -56,6 +56,10 @@ public class Game2048{
       return  new TwoNTile(8);
     }
   }
+  ///adsfklk;jnadsf;lkasdfnk;jnagskf
+  ///asdfjn/adjlffja;sdnf
+
+  dejate de joder pelo tudo
 
   // If the game board has F>0 free spaces, return a random integer
   // between 0 and F-1.  If there are no free spaces, throw an
